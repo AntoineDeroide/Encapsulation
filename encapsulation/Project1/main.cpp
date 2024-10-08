@@ -46,12 +46,23 @@ int main(int argc, const char* argv[]) {
 	std::cout << (*strArray)[0] << std::endl; 
 	*/
 	
+	/*
 	Point a;
 
-	a.x = 1.2;
-	a.y = 2.4;
-	a.z = 3.6;
+	a.x = 1.20;
+	a.y = 2.40;
+	a.z = 3.60;
 
 	a.ToString();
+	*/
+
+
+
+
+
+	/**/
+	/**/
+	/**/
+
 
 }

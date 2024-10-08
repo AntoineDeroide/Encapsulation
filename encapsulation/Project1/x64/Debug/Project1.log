@@ -1,2 +1,2 @@
 ﻿  def.cpp
-  Project1.vcxproj -> C:\Users\aderoide\Documents\GitHub\Encapsulation\encapsulation\x64\Debug\Project1.exe
+C:\Users\aderoide\Documents\GitHub\Encapsulation\encapsulation\Project1\def.cpp(181,1): error C4716: 'Mob::MoveEntity' : doit retourner une valeur
