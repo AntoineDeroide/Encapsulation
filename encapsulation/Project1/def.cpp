@@ -63,7 +63,7 @@ void MyVector2::SetPosY(float Y) {
 
 //
 
-Entity::Entity() : position(0.f, 0.f){}
+Entity::Entity(float b_x, float b_y) : position(0.f, 0.f){}
 
 
 MyVector2 Entity::GetEntityPos(void) {
@@ -132,7 +132,7 @@ void Alive::ModifyLife(float modify) {
 //
 
 
-StaticObject::StaticObject(MyVector2 b_position) {
+StaticObject::StaticObject(MyVector2 b_position) : Entity(b_position.GetPosX(), b_position.GetPosY()){
 
 	SetEntityPos(b_position);
 
@@ -142,7 +142,7 @@ StaticObject::StaticObject(MyVector2 b_position) {
 
 //
 
-BreakableObject::BreakableObject(MyVector2 b_position, float b_full_HP) : Alive(b_full_HP) {
+BreakableObject::BreakableObject(MyVector2 b_position, float b_full_HP) : Entity(b_position.GetPosX(), b_position.GetPosY()), Alive(b_full_HP) {
 
 	SetEntityPos(b_position);
 
@@ -158,7 +158,7 @@ void BreakableObject::ModifyLife(float modify) {
 
 //
 
-Mob::Mob(MyVector2 b_position, float b_full_hp, MyVector2 b_direction, float b_speed) : Entity(), Alive(b_full_hp), AMovable(b_direction, b_speed){
+Mob::Mob(MyVector2 b_position, float b_full_hp, MyVector2 b_direction, float b_speed) : Entity(b_position.GetPosX(), b_position.GetPosY()), Alive(b_full_hp), AMovable(b_direction, b_speed){
 
 	std::cout << "Mob just created at x = " << b_position.GetPosX() << " and y = " << b_position.GetPosY() << " with " << b_full_hp << " HP with direction x = " << b_direction.GetPosX() << " and direction y = " << b_direction.GetPosY() << " .\n";
 
@@ -174,9 +174,42 @@ void Mob::ModifyLife(float modify) {
 
 MyVector2 Mob::MoveEntity() {
 
-	AMovable::MoveEntity();
+	MyVector2 new_pos = AMovable::MoveEntity();
 
-	std::cout << "Mob move to x = " << std::endl;
+	std::cout << "Mob move to x = " << new_pos.GetPosX() << " and y = " << new_pos.GetPosY() << " .\n";
 
-	return;
+	return new_pos;
+}
+
+Player::Player(MyVector2 b_position, float b_full_HP, MyVector2 b_direction, float b_speed, float base_damage) : Entity(b_position.GetPosX(), b_position.GetPosY()), AMovable(b_direction, b_speed), Alive(b_full_HP){
+
+	std::cout << "Player just created at x = " << b_position.GetPosX() << " and y = " << b_position.GetPosY() << " with " << b_full_HP << " HP and with direction x = " << b_direction.GetPosX() << " and y = " << b_direction.GetPosY() << " .\n";
+
+}
+
+void Player::ModifyLife(float modify) {
+
+	Alive::ModifyLife(modify);
+
+	std::cout << "Player just died. RIP \n";
+
+}
+
+MyVector2 Player::MoveEntity() {
+
+	MyVector2 move = AMovable::MoveEntity();
+
+	std::cout << "Player moved to x = " << move.GetPosX() << " and y = " << move.GetPosY() << ".\n";
+
+	return move;
+}
+
+void Player::Attack(Alive* alive, float damage) {
+
+	damage = 10;
+
+	IAttacker::Attack(alive, damage);
+
+	std::cout << "Player just attacked.\n";
+
 }

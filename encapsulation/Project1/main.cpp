@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "func.h"
+#include "def.cpp"
 
 // Si les fichiers ne sont pas au mm niveau, insérer le chemin du fichier à la place du nom seul. ex : dossier/func.h  ci-dessus
 
@@ -56,11 +57,18 @@ int main(int argc, const char* argv[]) {
 	a.ToString();
 	*/
 
+	/* EXERCICE 10 */
+
+	StaticObject rock(MyVector2(1.0, 1.0));
+
+	BreakableObject branch(MyVector2(4.0, 3.0), 150);
+	
+	Mob zombie(MyVector2(5, 5), 80, MyVector2(2,2), 0.75);
+	
+	Player player(MyVector2(0, 0), 150, MyVector2(-2, -2), 1, 10);
 
 
 
-
-	/**/
 	/**/
 	/**/
 

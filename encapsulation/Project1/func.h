@@ -51,7 +51,7 @@ class Entity {
 	MyVector2 position;  
 
 public:
-	Entity();
+	Entity(float, float);
 
 	virtual MyVector2 GetEntityPos();
 	virtual void SetEntityPos(MyVector2 vector);
@@ -116,6 +116,18 @@ public:
 	void ModifyLife(float modify) override;
 
 	MyVector2 MoveEntity() override;
+};
+
+class Player : public Entity, public Alive, public AMovable, public IAttacker {
+
+public:
+	Player(MyVector2, float, MyVector2, float, float);
+
+	void ModifyLife(float modify) override;
+
+	MyVector2 MoveEntity() override;
+
+	void Attack(Alive* alive, float damage) override;
 };
 
 
