@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4C804EB-3A05-4D31-9F49-27D0DBAE4F72}|Project1\\Project1.vcxproj|C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\Integer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4C804EB-3A05-4D31-9F49-27D0DBAE4F72}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Integer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D4C804EB-3A05-4D31-9F49-27D0DBAE4F72}|Project1\\Project1.vcxproj|C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\def.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4C804EB-3A05-4D31-9F49-27D0DBAE4F72}|Project1\\Project1.vcxproj|solutionrelative:Project1\\def.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4C804EB-3A05-4D31-9F49-27D0DBAE4F72}|Project1\\Project1.vcxproj|C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D4C804EB-3A05-4D31-9F49-27D0DBAE4F72}|Project1\\Project1.vcxproj|solutionrelative:Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4C804EB-3A05-4D31-9F49-27D0DBAE4F72}|Project1\\Project1.vcxproj|C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\Integer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4C804EB-3A05-4D31-9F49-27D0DBAE4F72}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Integer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D4C804EB-3A05-4D31-9F49-27D0DBAE4F72}|Project1\\Project1.vcxproj|C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\func.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4C804EB-3A05-4D31-9F49-27D0DBAE4F72}|Project1\\Project1.vcxproj|solutionrelative:Project1\\func.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,43 +21,42 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 193,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 247,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Integer.h",
-              "DocumentMoniker": "C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\Integer.h",
-              "RelativeDocumentMoniker": "Project1\\Integer.h",
-              "ToolTip": "C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\Integer.h",
-              "RelativeToolTip": "Project1\\Integer.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAPAAAAAAAAAA==",
+              "Title": "func.h",
+              "DocumentMoniker": "C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\func.h",
+              "RelativeDocumentMoniker": "Project1\\func.h",
+              "ToolTip": "C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\func.h",
+              "RelativeToolTip": "Project1\\func.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-09T08:08:19.787Z",
+              "WhenOpened": "2024-10-09T09:34:06.218Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "def.cpp",
+              "DocumentMoniker": "C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\def.cpp",
+              "RelativeDocumentMoniker": "Project1\\def.cpp",
+              "ToolTip": "C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\def.cpp",
+              "RelativeToolTip": "Project1\\def.cpp",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-09T09:34:09.875Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 207,
+          "DockedWidth": 139,
           "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Integer.cpp",
-              "DocumentMoniker": "C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\Integer.cpp",
-              "RelativeDocumentMoniker": "Project1\\Integer.cpp",
-              "ToolTip": "C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\Integer.cpp",
-              "RelativeToolTip": "Project1\\Integer.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAwwEQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-09T08:08:25.5Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -66,9 +65,9 @@
               "RelativeDocumentMoniker": "Project1\\main.cpp",
               "ToolTip": "C:\\Users\\aderoide\\Documents\\GitHub\\Encapsulation\\encapsulation\\Project1\\main.cpp",
               "RelativeToolTip": "Project1\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-07T11:59:25.925Z",
+              "WhenOpened": "2024-10-09T09:34:11.799Z",
               "EditorCaption": ""
             }
           ]

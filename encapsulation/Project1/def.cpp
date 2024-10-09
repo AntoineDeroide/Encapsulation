@@ -1,38 +1,11 @@
 #include "func.h"
 #include <iostream>
 #include <sstream>
+#include <stdio.h>
 
 using namespace std;
-/*
-void test::DoStuff() {
 
-	std::cout << "Bonjour";
-
-}
-
-Point::Point() : x(0.f), y(0.f), z(0.f) {
-
-	x = 0.f;
-	y = 0.f;
-	z = 0.f;
-
-}
-
-std::string Point::ToString() {
-
-
-
-	std::stringstream sstring;
-
-	sstring << "Point " << "x: " << x << "; y: " << y << "; z: " << z << '.';
-
-	string returned = sstring.str();
-
-	std::cout << returned << endl;
-
-	return returned;
-}
-*/
+//
 
 MyVector2::MyVector2(float b_x, float b_y) : x(b_x), y(b_y){}
 
@@ -63,8 +36,7 @@ void MyVector2::SetPosY(float Y) {
 
 //
 
-Entity::Entity(float b_x, float b_y) : position(0.f, 0.f){}
-
+Entity::Entity(float b_x, float b_y) : position(b_x, b_y){}
 
 MyVector2 Entity::GetEntityPos(void) {
 
@@ -78,6 +50,7 @@ void Entity::SetEntityPos(MyVector2 vector) {
 
 }
 
+//
 
 AMovable::AMovable(MyVector2 b_vector, float b_speed) : direction(b_vector), speed(b_speed){}
 
@@ -96,10 +69,10 @@ void AMovable::SetSpeed(float f) {
 MyVector2 AMovable::MoveEntity(void) {
 
 	float x = direction.GetPosX();
-	x += speed;
+	x *= speed;
 
 	float y = direction.GetPosY();
-	y += speed;
+	y *= speed;
 
 	MyVector2 new_pos(x, y);
 
@@ -205,8 +178,6 @@ MyVector2 Player::MoveEntity() {
 }
 
 void Player::Attack(Alive* alive, float damage) {
-
-	damage = 10;
 
 	IAttacker::Attack(alive, damage);
 

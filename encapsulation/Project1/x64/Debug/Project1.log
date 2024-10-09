@@ -1,7 +1,4 @@
-﻿  Integer.cpp
-C:\Users\aderoide\Documents\GitHub\Encapsulation\encapsulation\Project1\Integer.cpp(56,9): warning C4552: '%' : résultat de l'expression non utilisé
-C:\Users\aderoide\Documents\GitHub\Encapsulation\encapsulation\Project1\Integer.cpp(61,9): warning C4552: '<<' : résultat de l'expression non utilisé
-main.obj : error LNK2005: "public: __cdecl AMovable::AMovable(class MyVector2,float)" (??0AMovable@@QEAA@VMyVector2@@M@Z) déjà défini(e) dans def.obj
+﻿main.obj : error LNK2005: "public: __cdecl AMovable::AMovable(class MyVector2,float)" (??0AMovable@@QEAA@VMyVector2@@M@Z) déjà défini(e) dans def.obj
 main.obj : error LNK2005: "public: __cdecl Alive::Alive(float)" (??0Alive@@QEAA@M@Z) déjà défini(e) dans def.obj
 main.obj : error LNK2005: "public: __cdecl BreakableObject::BreakableObject(class MyVector2,float)" (??0BreakableObject@@QEAA@VMyVector2@@M@Z) déjà défini(e) dans def.obj
 main.obj : error LNK2005: "public: __cdecl Entity::Entity(float,float)" (??0Entity@@QEAA@MM@Z) déjà défini(e) dans def.obj
