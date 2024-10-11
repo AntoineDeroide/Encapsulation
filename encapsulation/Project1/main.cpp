@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include "func.h"
-#include "def.cpp"
 
 // Si les fichiers ne sont pas au mm niveau, insérer le chemin du fichier à la place du nom seul. ex : dossier/func.h  ci-dessus
 
