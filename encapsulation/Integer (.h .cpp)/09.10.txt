@@ -1,0 +1,1 @@
+Utilisation d'opérateurs surchargés pour reproduire le comportement d'opérations de nombres entiers
